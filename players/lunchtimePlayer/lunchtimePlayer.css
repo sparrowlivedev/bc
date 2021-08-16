@@ -1,0 +1,4 @@
+/* hide the progress scrubber but keep the element spacing */
+.vjs-progress-control {
+    visibility: hidden;
+}
