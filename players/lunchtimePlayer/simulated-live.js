@@ -3,14 +3,14 @@
 
 videojs.registerPlugin('simulated_live', function() {
   var my_player = this,
-  playlist_id = '1708358461800956436', // replace with your playlist id
+  playlist_id = '1708358461800956436', // REPLACE WITH PLAYLIST ID
   video_data,
   video_ranges = [],
   playlist_duration = 0,
   playlist_position,
   current_video_index,
   current_video_position,
-  origin_time = new Date('2021-01-01T00:00:00'),
+  origin_time = new Date('2021-08-17T13:00:00'), // REPLACE WITH EVENT START TIME
   now_time,
   time_passed,
   logger = document.getElementById('logger');
