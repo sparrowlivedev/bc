@@ -2,3 +2,7 @@
 .vjs-progress-control {
     visibility: hidden;
 }
+
+.vjs-duration-display {
+    visibility: hidden;
+}
