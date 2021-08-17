@@ -10,3 +10,7 @@
 .vjs-time-divider {
     visibility: hidden;
 }
+
+.countdown-numbers {
+    color: #eee;
+}
