@@ -3,6 +3,10 @@
     visibility: hidden;
 }
 
-.vjs-duration-display {
+.vjs-duration {
+    visibility: hidden;
+}
+
+.vjs-time-divider {
     visibility: hidden;
 }
