@@ -10,7 +10,7 @@ videojs.registerPlugin('sim_live', function() {
   playlist_position,
   current_video_index,
   current_video_position,
-  origin_time = new Date('2021-08-18T09:40:00'), // REPLACE WITH EVENT START TIME
+  origin_time = new Date('2021-08-18T10:00:00'), // REPLACE WITH EVENT START TIME
   now_time,
   time_passed,
   logger = document.getElementById('logger');
