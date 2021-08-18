@@ -10,7 +10,7 @@ videojs.registerPlugin('sim_live', function() {
   playlist_position,
   current_video_index,
   current_video_position,
-  origin_time = new Date('2021-08-17T13:00:00'), // REPLACE WITH EVENT START TIME
+  origin_time = new Date('2021-08-18T10:00:00'), // REPLACE WITH EVENT START TIME
   now_time,
   time_passed,
   logger = document.getElementById('logger');
@@ -35,9 +35,9 @@ videojs.registerPlugin('sim_live', function() {
   function get_playlist_position() {
     now_time = new Date();
     time_passed = (now_time - origin_time)/1000;
-    console.log("origin_time: ", origin_time);
-    console.log("now_time: ", now_time);
-    console.log("time_passed: ", time_passed);
+//    console.log("origin_time: ", origin_time);
+//    console.log("now_time: ", now_time);
+//    console.log("time_passed: ", time_passed);
     playlist_position = time_passed % playlist_duration;
     return playlist_position;
   }
@@ -70,7 +70,7 @@ videojs.registerPlugin('sim_live', function() {
   // fetch the playlist
   my_player.catalog.getPlaylist(playlist_id, function(error, playlist){
     if (error) {
-      console.log('There was an error retrieving the playlist: ', error);
+//      console.log('There was an error retrieving the playlist: ', error);
     }
     
     // load the playlist into the player 
@@ -88,23 +88,23 @@ videojs.registerPlugin('sim_live', function() {
     
     // get the duration of the playlist and the video ranges
     get_playlist_duration();
-    console.log(logger, 'playlist duration: ' + playlist_duration);
+//    console.log(logger, 'playlist duration: ' + playlist_duration);
     
     
     
     // get the start position in the playlist
     get_playlist_position();
-    console.log(logger, 'playlist position: ' + playlist_position);
+//    console.log(logger, 'playlist position: ' + playlist_position);
     
     // get the index of the video where the start position is
     get_current_video_index();
-    console.log(logger, '@video index: ' + current_video_index);
-    console.log(logger, 'video: ' + video_data[current_video_index].name);
+//    console.log(logger, '@video index: ' + current_video_index);
+//    console.log(logger, 'video: ' + video_data[current_video_index].name);
     
     
     // get start position in the video
     get_current_video_position();
-    console.log(logger, 'video position:' + current_video_position);
+//    console.log(logger, 'video position:' + current_video_position);
     
     
     // set the start video as the current one
@@ -114,7 +114,7 @@ videojs.registerPlugin('sim_live', function() {
     // my_player.on('loadedmetadata', function() {
       // seek to the start point
       my_player.currentTime(current_video_position);
-      console.log(logger, 'set position to ' + current_video_position);
+//      console.log(logger, 'set position to ' + current_video_position);
       
       // start the video
       my_player.play();
