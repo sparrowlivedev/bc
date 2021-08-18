@@ -44,7 +44,7 @@ videojs.registerPlugin('simulated_live', function() {
    */
   function get_current_video_index() {
     current_video_index = 0;
-    return current_video_index;
+    return;
     var i,
       i_max = video_ranges.length;
       for (i = 0; i < i_max; i++) {
@@ -95,7 +95,7 @@ videojs.registerPlugin('simulated_live', function() {
     
     // get the index of the video where the start position is
     get_current_video_index();
-    console.log(logger, 'video index: ' + current_video_index);
+    console.log(logger, '@video index: ' + current_video_index);
     console.log(logger, 'video: ' + video_data[current_video_index].name);
     
     
