@@ -1,7 +1,7 @@
 // Brightcove Plugin
 // https://apis.support.brightcove.com/live/code-samples/simulated-live.html
 
-videojs.registerPlugin('simulated_live', function() {
+videojs.registerPlugin('simuLive', function() {
   var my_player = this,
   playlist_id = '1708358461800956436', // REPLACE WITH PLAYLIST ID
   video_data,
