@@ -38,7 +38,7 @@ videojs.registerPlugin('sim_live', function() {
 //    console.log("origin_time: ", origin_time);
 //    console.log("now_time: ", now_time);
 //    console.log("time_passed: ", time_passed);
-    if (time_passed > (playlist_duration - 60)) playlist_position = 0;
+    if (time_passed > (playlist_duration - 60) || time_passed < 0) playlist_position = 0;
     else playlist_position = time_passed % playlist_duration;
     return playlist_position;
   }
