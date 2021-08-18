@@ -43,6 +43,7 @@ videojs.registerPlugin('simulated_live', function() {
    * @Desc:  gets the index of the video that corresponds to the current position in the playlist
    */
   function get_current_video_index() {
+    return 0;
     var i,
       i_max = video_ranges.length;
       for (i = 0; i < i_max; i++) {
